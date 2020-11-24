@@ -1,4 +1,4 @@
-# Calisthenics
+# Calisthenics (9 steps to better software design today, by Jeff Bay)
 > We’ve all seen poorly written code that’s hard to understand, test, and maintain.
 > Object-oriented programming promised to save us from our old procedural code, allowing us to write software incrementally, reusing as we go along. But sometimes it seems like we’re just chasing down the same old complex, coupled designs in Java that we had in C. 
 
