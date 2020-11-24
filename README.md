@@ -16,6 +16,7 @@ understand that encapsulation means hiding data, implementation, type, design, o
 It’s another thing altogether to design code that implements encapsulation well. So here’s an
 exercise that can help you to internalize principles of good object-oriented design and actually
 use them in real life. 
+
 ------------------------------------
 # The Challenge
 Do a simple project using far stricter coding standards than you’ve ever used in your life.
@@ -31,6 +32,7 @@ about what would have to happen to move those responsibilities into real, first-
 their own. It’s developing this type of thinking that’s the real value of the exercise. So stretch
 the limits of what you imagine is possible, and see whether you start thinking about your code in
 a new way
+
 ------------------------------------
 # The Rules
 1. One level of indentation per method
@@ -42,6 +44,7 @@ a new way
 7. Keep all entities small
 8. No classes with more than two instance variables
 9. No getters/setters/properties
+
 ------------------------------------
 # Rule 1: One level of indentation per method
 > A giant method lacks cohesiveness.
@@ -61,6 +64,7 @@ Here at the end of the first rule, we should also point out that the more you pr
 rules, the more the advantages come to fruition. Your first attempts to decompose problems in
 the style presented here will feel awkward and likely lead to little gain you can perceive. There is
 a skill to the application of the rules – this is the art of the programmer raised to another level.
+
 ----------------------------
 # Rule 2: Don’t use the ELSE keyword
 > Object-oriented languages give us a powerful tool, polymorphism, for handling complex
@@ -97,6 +101,7 @@ programs.
 Small objects like Hour or Money also give us an obvious place to put behavior that would
 otherwise have been littered around other classes. This becomes especially true when you apply
 the Rule 9, and only the small object can access the value. 
+
 ----------------------------
 # Rule 4: First class collections
 > Any class that contains a collection should contain no other member variables
@@ -120,6 +125,7 @@ boundaries into types that you shouldn’t know about.
 The Law of Demeter (“Only talk to your friends”) is a good place to start, but think about it this
 way: You can play with your toys, toys that you make, and toys that someone gives you. You
 don’t ever, ever play with your toy’s toys.
+
 ----------------------------
 # Rule 6: Don’t abbreviate
 > It’s often tempting to abbreviate in the names of classes, methods, or variables. Resist the
@@ -133,6 +139,7 @@ might be a sign of a misplaced responsibility, or a missing class.
 Try to keep class and method names to 1-2 words, and avoid names that duplicate the context. If
 the class is an Order, the method doesn’t need to be called shipOrder(). Simply name the method
 ship() so that clients call order.ship() – a simple and clear representation of what’s going on. 
+
 ----------------------------
 # Rule 7: Keep all entities small
 > This means no class over 50 lines and no package over 10 files.
@@ -169,6 +176,7 @@ objects. It was possible to tweeze out an object model, but it was a painstaking
 understand the related groups of behavior and see the result. In contrast, the recursive application
 of this rule has lead to very quick decomposition of complex large objects into much simpler
 models. Behavior naturally follows the instance variables into the appropriate place. 
+
 ----------------------------
 # Rule 9: No getters/setters/properties
 
@@ -181,6 +189,7 @@ for and place behavior into a single place in the object model. This has many be
 downstream effects, such as a dramatic reduction in duplication errors and a better localization of
 changes to implement new features.
 Another way this rule is commonly stated is “Tell, don’t ask”. 
+
 ----------------------------
 # Conclusion
 7 of these 9 rules are simply ways to visualize and implement the holy grail of object oriented
